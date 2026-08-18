@@ -110,23 +110,24 @@
       </div>
     </section>
 
-    <section id="projects" class="bg-gray-100 py-16 px-4 sm:px-6 md:px-8">
+    <section id="project" class="bg-gray-100 py-16 px-4 sm:px-6 md:px-8">
       <div class="container mx-auto">
         <h2 class="text-3xl font-semibold text-gray-800 mb-8 text-center">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6">
           <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Project 1 :- Sales Order Processing Integration</h3>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Project 1 :- SAP S/4HANA – Logistics Shipment Integration Modernization</h3>
             <p class="text-gray-600 mb-4">
-              Developed a cloud integration solution using SAP Integration Suite (SAP CPI) to automate sales order processing between an e-commerce platform and SAP S/4HANA. The integration enabled real-time order creation, order status updates, and invoice synchronization through secure API communication.
+              Developed a cloud integration solution using SAP Integration Suite (SAP CPI) to automate shipment processing between SAP S/4HANA and Logistics system. The integration enabled real-time shipment creation, tracking status updates and Transaction id synchronization through secure API communication.
             </p>
              <p class="text-gray-600 mb-2">
-              Technology Stack :- SAP Integration Suite (CPI), SAP BTP, REST API, SOAP, OData, HTTP Adapter, SFTP Adapter, Groovy Script, XML, JSON, XSD, Message Mapping, API Management
+              Technology Stack :- SAP Integration Suite (CPI), SAP BTP, REST API, SOAP, HTTP Adapter, Groovy Script, XML, JSON, XSD, Message Mapping.
             </p>
             <ul class="list-disc list-inside text-gray-700">
-                <li>Designed and developed integration flows for sales order processing.</li>
-                <li>Connected external e-commerce applications with SAP S/4HANA using REST APIs.</li>
-                <li>Developed reusable Message Mapping and Groovy Scripts for payload transformation.</li>
-                <li>Configured Router, Splitter, Gather, Multicast, Content Modifier, and Process Direct.</li>
+                <li>Designed and developed integration flows for shipment processing.</li>
+                <li>Gathered details & Designed iFlow as a SOAP-to-REST integration without impacting the SAP S/4HANA sender.</li>
+                <li>Coordinated with the target team to obtain the REST API,specifications and expected JSON payload.</li>
+                <li>Identified payload structure issues where single objects were generated instead of arrays, causing REST API validation failures.</li>
+                <li>Developed Groovy scripts to dynamically convert mandatory nodes into JSON arrays to comply with FedEx API requirements.</li>
                 <li>Built centralized exception handling and logging framework.</li>
                 <li>Implemented secure API communication using OAuth and Basic Authentication.</li>
                 <li>Performed interface monitoring, troubleshooting, and production support.</li>
